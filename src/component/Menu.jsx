@@ -79,7 +79,7 @@ const Menu = () => {
               {item.child.length > 0 && (
                 <ul className={`absolute hidden group-hover:block ${item?.id?'w-[450px]':'w-[200px]'} bg-white shadow mt-0  py-5 rounded`}>
                   {item.child.map((childItem, childIndex) => (
-                    <div className="flex ">
+                    <div  key={childIndex} className="flex ">
                     <li
                       key={childIndex}
                       className={`text-sm py-2 ${item?.id?'w-1/2':'w-auto'} hover:bg-gray-50 px-6 `}
