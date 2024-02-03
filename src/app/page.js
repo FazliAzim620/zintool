@@ -86,7 +86,7 @@ const frompdf=[
     <main className="">
     
     
-      <Bookmarks title={'Tour Bookmarks'} data={data}/>
+      <Bookmarks title={'Your Bookmarks'} data={data}/>
       <div className="w-[100%] flex justify-start pl-[5rem]    ">
       <Carousel/>
       </div>
