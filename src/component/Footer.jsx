@@ -57,7 +57,7 @@ const Footer = () => {
         </p>
         <ul className="flex gap-6 text-gray-600 items-center ">
           {footeritem?.map((item, ind) => (
-            <li key={ind} className="text-xs">{item}</li>
+            <li key={ind} className="text-xs cursor-pointer hover:text-gray-800">{item}</li>
           ))}
         </ul>
      </div>

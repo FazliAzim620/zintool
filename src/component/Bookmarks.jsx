@@ -3,7 +3,7 @@ import React from 'react'
 const Bookmarks = ({title,data}) => {
   
   return (
-    <div className='px-20 pt-12'>
+    <div className='px-20 pt-12 cursor-pointer'>
       <h1 className='text-xl font-bold   '>{title}</h1>
       <div className='py-5 flex gap-4'>
         {data?.map((item,index)=>{

@@ -7,7 +7,7 @@ const FooterCard = ({items,title}) => {
         <p className='font-semibold py-6'>{title}</p>
         <ul>
       {items?.map((item,ind)=>
-        <li key={ind} className='py-2 text-gray-600'>{item}</li> )}
+        <li key={ind} className='py-2 text-gray-600 hover:bg-[#f6f6f6] hover:text-gray-800 cursor-pointer'>{item}</li> )}
     </ul>
     </div>
   )

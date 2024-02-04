@@ -116,7 +116,7 @@ const MultiCarousel = () => {
           return (
             <div
               key={index}
-              className="ring-1 ring-gray-200  relative duration-500 transition-all hoverShadow m-1 group w-[95%] rounded-md h-[10rem] p-4 "
+              className="ring-1 cursor-pointer ring-gray-200  relative duration-500 transition-all hoverShadow m-1 group w-[95%] rounded-md h-[10rem] p-4 "
             >
               <span
                 onClick={() => bookmarkHandler(index)}
