@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-[#F1F3F4] w-full h-[90vh] mt-48 ">
+    <div className="bg-[#F1F3F4] w-full h-auto md:h-[90vh] mt-48 ">
       {/* ------------------------------- footer topbar */}
       <div className="border-b mx-8 py-6 flex items-center gap-6">
         <p className="font-semibold text-lg text-gray-600">Follow us</p>
@@ -40,15 +40,15 @@ const Footer = () => {
         <i className="fa-brands text-xl text-gray-600 fa-facebook-f  duration-500 transition-all hoverShadow cursor-pointer hover:translate-x-1"></i>
       </div>
       {/* ------------------------------- footer topbar end */}
-      <div className="border-b mx-8 mt-4 pb-6 flex  justify-start items-start ">
+      <div className="border-b mx-8 mt-4 pb-6 flex  justify-start items-start flex-wrap md:flex-nowrap ">
         <FooterCard title="Internal Links" items={items1} />
         <FooterCard title="Enterprise" items={items2} />
         <FooterCard title="Internal Links" items={items3} />
         <FooterCard title="Enterprise" items={items4} />
         <FooterCard title="Internal Links" items={items5} />
       </div>
-      <div className="flex items-center justify-between mx-8 mt-10">
-     <div className="flex items-center gap-8">
+      <div className="flex items-center justify-between flex-wrap mx-8 mt-10">
+     <div className="flex items-start md:items-center flex-col md:flex-row gap-8">
      <p className="font-bold text-xl">
           Similar{" "}
           <span className="bg-black duration-500 transition-all hoverShadow cursor-pointer hover:translate-x-2 rounded-xl text-white px-4 py-2">
@@ -61,7 +61,7 @@ const Footer = () => {
           ))}
         </ul>
      </div>
-     <div>
+     <div className="mt-2 md:mt-auto">
         <button title="Change Theme" className="duration-500 transition-all hoverShadow bg-gray-300 w-10 flex justify-center items-center text-2xl text-gray-700 h-10 p-4 rounded-full">
         <i className="fa-regular fa-moon"></i>
         </button>

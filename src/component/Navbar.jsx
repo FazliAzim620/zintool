@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="px-6 py-2 flex justify-between items-center">
+    <div className="px-6 py-2 flex flex-wrap justify-between items-center">
       <Link href='/' className="flex items-center gap-1 flex-1  ">
         {/* logo */}
         <div className="bg-blue-500 px-1 rounded  text-white">

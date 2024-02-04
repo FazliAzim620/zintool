@@ -71,7 +71,7 @@ const Menu = () => {
 
   return (
     <div className="px-8 py-2 flex justify-between items-center shadow">
-      <ul className="flex justify-between items-center w-[92%]">
+      <ul className="flex justify-between flex-wrap items-center w-[92%]">
         {data.map((item, index) => {
           return (
             <li key={index} className="relative group cursor-pointer">
